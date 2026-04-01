@@ -2,7 +2,7 @@ services:
   - type: web
     name: zorvyn-backend
     runtime: node
-    plan: free # or 'starter' if using a persistent disk
+    plan: free
     buildCommand: npm install
     startCommand: npm start
     envVars:
@@ -11,10 +11,7 @@ services:
       - key: JWT_SECRET
         generateValue: true
       - key: DB_PATH
-        value: /var/data/finance.db
+        value: ./data/finance.db
       - key: PORT
         value: 10000
-    disk:
-      name: zorvyn-data
-      mountPath: /var/data
-      sizeGB: 1
+
