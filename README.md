@@ -369,9 +369,20 @@ zorvyn/
 └── README.md
 ```
 
+## Features Implemented
+
+- [x] **User and Role Management** — Full lifecycle management for users with assigned roles (Viewer, Analyst, Admin) and status tracking (active/inactive).
+- [x] **Financial Records CRUD** — Complete Create, Read, Update, and Soft-Delete operations for financial entries.
+- [x] **Record Filtering (by date, category, type)** — Advanced filtering capabilities via query parameters, including search and multi-field sorting.
+- [x] **Dashboard Summary APIs (totals, trends)** — Aggregated analytics providing total income, expenses, category breakdowns, and weekly/monthly trends.
+- [x] **Role Based Access Control** — Middleware-enforced permissions ensuring that only authorized users can access or modify specific data.
+- [x] **Input Validation and Error Handling** — Strict Joi schema validation for all requests paired with a centralized error handling system.
+- [x] **Data Persistence (Database)** — Reliable data storage using SQLite with `better-sqlite3`, featuring WAL mode for high-performance concurrent reads.
+
 ---
 
 ## License
 
 MIT
+
 
